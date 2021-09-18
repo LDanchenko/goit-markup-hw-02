@@ -13,7 +13,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
 }
-a {
+.link {
   text-decoration: none;
 }
 
@@ -69,8 +69,32 @@ a {
   text-transform: uppercase;
 }
 .btn {
+  background-color: #f5f4fa;
+  cursor: pointer;
+  color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  border: 0;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+}
+
+.accent-btn {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+.btn-portfolio {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .heading-hidden {
@@ -83,15 +107,6 @@ a {
   text-transform: uppercase;
   font-size: 14px;
 }
-
-.hero-btn {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-
-  letter-spacing: 0.06em;
-}
-
 .benefits-list .description {
   line-height: 1.71;
 }
@@ -152,4 +167,25 @@ a {
 }
 .footer-list-item .link.address {
   color: var(--primary-white-color);
+}
+.footer-list-item .link:hover,
+.footer-list-item .link:focus {
+  color: var(--accent-color);
+}
+
+.portfolio-list .portfolio-item {
+  border: 1px solid #eeeeee;
+}
+
+.portfolio-item > h2 {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-item > p {
+  font-size: 16px;
+  line-height: 1.87px;
 }
