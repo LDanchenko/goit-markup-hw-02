@@ -130,7 +130,7 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list-item > h3 {
+.team-list-item > .team-list-title {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -138,7 +138,7 @@ body {
   text-align: center;
 }
 
-.team-list-item > p {
+.team-list-item > .team-list-description {
   font-size: 16px;
   line-height: 1.18;
   /* identical to box height */
